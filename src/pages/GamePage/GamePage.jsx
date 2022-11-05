@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { gameContext } from '../../context/GameContextProvider';
 import '../GamePage/GamePage.css';

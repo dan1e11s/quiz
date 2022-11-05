@@ -4,11 +4,10 @@ import '../MainPage/MainPage.css';
 import { gameContext } from '../../context/GameContextProvider';
 
 const MainPage = () => {
-  const { getQuestions, setStep, setCorrect } = useContext(gameContext);
+  const { setStep, setCorrect } = useContext(gameContext);
   const navigate = useNavigate();
 
   useEffect(() => {
-    getQuestions();
     setStep(0);
     setCorrect(0);
   }, []);
