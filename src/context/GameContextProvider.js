@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 export const gameContext = createContext();
 
 const GameContextProvider = ({ children }) => {
-  const API = 'http://localhost:8000/questions';
+  const API = 'https://quiz-kg.herokuapp.com/api';
 
   const navigate = useNavigate();
 
